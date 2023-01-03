@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About</title>
+
+    <style>
+
+
+    .header_about{
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    .encours {
+        color: rgba(36, 34, 34,0.2);
+    }
+
+    .nav{
+        left: -7%;
+    }
+
+
+
+    form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto; 
+            line-height: 30px;
+            box-shadow: 5px 5px 2px #f1eeee,-5px -5px 1px #f1eeee;
+            border-radius: 30px;
+            height: 40vh;
+            width: 60vw;
+        }
+        input{
+            width: 200px;
+            padding: 8px;
+            border-radius: 9px;
+            outline: none;
+            border-color: #fff;
+            border: none;
+        }
+        form .btn_envoi{
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding: 8px;
+            font-weight: 900;
+            font-family: verdana, sans-serif;
+            border-radius: 15px;
+            border: 1px solid rgba(000,000,000,0.1);
+            
+        }
+        form .btn_envoi:hover{
+            box-shadow:inset 5px 5px 15px #fff,inset -5px -3px 25px #fff;
+            
+            
+        }
+        textarea{
+            margin-top: 10px;
+            border-radius: 9px;
+            outline: none; 
+            border: none;
+            border-color: #fff;
+            resize: none;
+        }
+        .info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 50px auto; 
+            line-height: 30px;
+            border-radius: 30px;
+            height: 35vh;
+            width: 60vw;  
+        }
+        .le_tout{
+            display: flex;
+            flex-direction: column;
+        }
+        .infosous{
+        box-shadow: 5px 5px 2px #f1eeee,-5px -5px 1px #f1eeee;
+        height: 25vh;
+        width: 55vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 2px;
+        border-radius: 10px;
+        cursor: pointer;
+        }
+        .encours3 {
+        color: rgba(36, 34, 34,0.2);
+    }
+    </style>
+
+</head>
+<body>
+     <header class="header_about">
+         <nav class="nav">
+             <ul><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></ul>
+             <br><hr> <br>
+             <ul><a href="" ><i class="fa-solid fa-user"></i>About</a></ul>
+             <br><hr> <br>
+             <ul><a href="./service.htm"> <i class="fa-solid fa-book"></i> Service</a></ul>
+             <br><hr> <br>
+             <ul><a href="contact.html" class="encours3"> <i class="fa-solid fa-inbox"></i>Conctact</a></ul>
+             <br><hr> <br>
+             <P>&copy; Copyright OURY - 2022</P>
+         </nav>
+         <div class="le_tout">
+            <div class="info">
+                <div class="infosous">
+                        <i class="fa-solid fa-book"></i>
+                    <h1>Phone</h1>
+                    <p>00000000000</p>
+                </div>
+                <div class="infosous">
+                        <i class="fa-solid fa-book"></i>
+                    <h1>Email</h1>
+                    <p>oury@domain.com</p>
+                </div>
+                <div class="infosous">
+                        <i class="fa-solid fa-book"></i>
+                    <h1>Address</h1>
+                    <p>Mamou</p>
+                </div>
+            </div>
+            
+            <form method="" class="monForm" >
+                <label  >Prénom</label>
+                <input type="text" id='prenom'  >
+                <label for="mail">E-Mail</label>
+                <input type='email' id="mail">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message ..."></textarea>       
+                <input type="submit" class='btn_envoi'  id='btn_envoie' value="Envoyer"> 
+            </form>  
+        </div>
+     </header>    
+</body>
+</html>

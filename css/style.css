@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Times, serif
+}
+body{
+    background-color: rgba(233, 223, 223, 0.2);
+}
+hr{
+    width: 70%;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    
+
+}
+.profile img {
+    height: 70%;
+    width: 90%;
+    border: 5px solid rgba(253, 253, 253, 1);
+    border-radius: 50%;
+    box-shadow: 5px 5px 2px #f1eeee,-5px -5px 2px #f1eeee;
+
+}
+.profile,nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile {
+    width: 70vh;
+    height: 100vh;
+    padding: 100px;
+    position: relative;
+    left: -88px;
+    transform: translateY(-92px);
+
+}
+.profile h1{
+    text-transform: uppercase;
+}
+nav {
+    width: 40vh;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    /* left:-253px; */
+    left: -15%;
+    font-weight: 900;
+    box-shadow: 5px 5px 2px #f1eeee,-5px -5px 2px #f1eeee;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgba(253, 253, 253, 0.9);
+    color: #000000;
+}
+
+nav p {
+    position: absolute;
+    bottom: 30px;
+    opacity: 0.7;
+}
+
+nav h1:hover{
+    transform: rotate(180deg);
+}
+
+nav i {
+    margin-right: 9px;
+    font-size: 1.4rem;
+}
+
+.profile i {
+    margin: 10px;
+    font-size: 2rem;
+    color: black;
+}
+.profile img:hover{
+    transform: scale(1.02);
+
+}
+nav :hover{
+    transform: scale(1.02); 
+    color: #ac9e9e;
+}
+.profile i:hover{
+    transform: scale(1.01);
+    color: blue;
+}
